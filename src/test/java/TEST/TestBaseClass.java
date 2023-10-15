@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.BeforeClass;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -22,7 +23,6 @@ public class TestBaseClass {
             e.printStackTrace();
         }
     }
-
     public static void Readfile() {
         String browser = prop.getProperty("Browser");
         if (browser.equalsIgnoreCase("chrome")) {
